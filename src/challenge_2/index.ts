@@ -6,25 +6,10 @@ Encima nos hemos dado cuenta que algunas palabras vienen con un _ delante de la 
 Transforma el texto a un objeto que contenga el nombre de cada regalo y las veces que aparece. Por ejemplo, si tenemos el texto:
 */
 
-const listGifts = (letter: string) => {
-    const replace = letter.replace(/\s{2,}/g, " ").trim();
-    const strLowerCase = replace.toLowerCase();
+import { listGifts } from "./function";
 
-    const split = strLowerCase.split(" ");
-    const dict: any = {};
+const exampleData = "bici coche balón _playstation bici coche peluche"
 
-    for (let value of split) {
-        if (value.includes("_")) continue
+const response = listGifts(exampleData);
 
-        else if (!dict[value]) {
-            dict[value] = 1;
-            continue
-        }
-
-        dict[value] += 1
-    }
-
-    return dict
-}
-
-export { listGifts };
+console.log(response)
