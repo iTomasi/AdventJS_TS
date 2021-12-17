@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "challenge_1": "ts-node src/challenge_1/index.ts",
-    "challenge_2": "ts-node src/challenge_2/index.ts"
+    "challenge_2": "ts-node src/challenge_2/index.ts",
+    "challenge_3": "ts-node src/challenge_3/index.ts"
   },
   "keywords": [],
   "author": "",
