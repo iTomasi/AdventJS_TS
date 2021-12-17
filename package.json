@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/challenge_4/index.ts",
     "challenge_1": "ts-node src/challenge_1/index.ts",
     "challenge_2": "ts-node src/challenge_2/index.ts",
-    "challenge_3": "ts-node src/challenge_3/index.ts"
+    "challenge_3": "ts-node src/challenge_3/index.ts",
+    "challenge_4": "ts-node src/challenge_4/index.ts"
   },
   "keywords": [],
   "author": "",
