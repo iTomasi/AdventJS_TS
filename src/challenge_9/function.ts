@@ -5,7 +5,6 @@ Por suerte a Mark Zucktheelf 🧝 se le ha ocurrido crear una función que permi
 */
 
 const groupBy = (collection: any[], it: any) => {
-
     const dict: any = {};
 
     try {
