@@ -12,7 +12,7 @@ coins[5] = 50 céntimos
 */
 
 const getCoins = (change: number) => {
-    const coinsData = [1, 2, 5, 10, 20, 50];
+    const coinsData: number[] = [1, 2, 5, 10, 20, 50];
     const userChange = coinsData.map((value) => ({ value, quantity: 0 }));
 
     while (change > 0) {
