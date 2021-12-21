@@ -38,8 +38,8 @@ Lo difícil, e importante, es que entiendas que Santa Claus va entregando y reco
 import { canCarry } from "./function";
 
 const exampleData: any = [
-    2,
-    [[1, 2, 4], [2, 3, 8]]
+    3,
+    [[1, 2, 4], [2, 3, 8], [2, 4, 9]]
 ]
 
 const response = canCarry(exampleData[0], exampleData[1])

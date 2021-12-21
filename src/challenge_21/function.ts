@@ -37,25 +37,29 @@ Lo difícil, e importante, es que entiendas que Santa Claus va entregando y reco
 
 const canCarry = (capacity: number, trip: any[]) => {
 
-    let dropGifts: number = 0;
+    const dropGifts: number[] = [];
     let currentGifts: number = 0;
 
     for (let i = 0; i < trip.length; i++) {
         if (currentGifts > capacity) return false
 
         const value = trip[i];
+        console.log(value)
 
         if (i !== 0) {
-            if (dropGifts <= value[1]) {
+            const findIndex = dropGifts.findIndex((drop) => drop <= value[1])
+
+            if (findIndex !== -1) {
                 currentGifts = 0
             }
         }
 
         currentGifts += value[0];
-        dropGifts = value[2];
+        dropGifts.push(value[2]);
 
     }
 
+    console.log(currentGifts)
     return currentGifts <= capacity
 }
 
