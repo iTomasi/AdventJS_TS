@@ -42,6 +42,13 @@ const learn = (time: number, courses: number[]) => {
         const findIndex = courses.findIndex((num) => num + value === time)
 
         if (findIndex !== -1 && findIndex !== i) {
+            if (courses[findIndex] === value) {
+                course_1.index = i;
+                course_1.value = value;
+                course_0.index = findIndex;
+                course_0.value = courses[findIndex];
+                break
+            }
             course_0.index = i;
             course_0.value = value;
             course_1.index = findIndex;
