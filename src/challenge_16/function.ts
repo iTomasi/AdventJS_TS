@@ -29,7 +29,6 @@ const decodedNumber = (symbols: string) => {
 
     const split = symbols.split("");
     let valueRes: number = 0;
-    let previousValue: number = 0;
 
     for (let i = 0; i < split.length; i++) {
         const value_0 = split[i];
