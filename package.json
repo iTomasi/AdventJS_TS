@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/challenge_19/index.ts",
+    "dev": "nodemon src/challenge_20/index.ts",
     "challenge_1": "ts-node src/challenge_1/index.ts",
     "challenge_2": "ts-node src/challenge_2/index.ts",
     "challenge_3": "ts-node src/challenge_3/index.ts",
@@ -23,7 +23,8 @@
     "challenge_16": "ts-node/src/challenge_16/index.ts",
     "challenge_17": "ts-node/src/challenge_17/index.ts",
     "challenge_18": "ts-node/src/challenge_18/index.ts",
-    "challenge_19": "ts-node/src/challenge_19/index.ts"
+    "challenge_19": "ts-node/src/challenge_19/index.ts",
+    "challenge_20": "ts-node/src/challenge_20/index.ts"
   },
   "keywords": [],
   "author": "",
