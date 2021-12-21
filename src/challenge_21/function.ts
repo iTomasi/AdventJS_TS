@@ -40,8 +40,6 @@ const canCarry = (capacity: number, trip: any[]) => {
     let dropGifts: number = 0;
     let currentGifts: number = 0;
 
-    console.log(capacity)
-
     for (let i = 0; i < trip.length; i++) {
         if (currentGifts > capacity) return false
 
